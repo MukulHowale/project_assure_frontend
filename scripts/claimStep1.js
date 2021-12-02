@@ -17,7 +17,7 @@ let next = document.getElementById('next');
 
 async function populate() {
     
-    let a = await fetch(`http://localhost:8070/booking/hospital/${userId}`);
+    let a = await fetch(`https://project-assure-backend.herokuapp.com/booking/hospital/${userId}`);
     policies = await a.json();
 
     localStorage.setItem("policy_hospital_claim", JSON.stringify(policies));

@@ -1,7 +1,7 @@
 
 let temp = localStorage.getItem("members");
 
-fetch("http://localhost:8070/explore/policies", {
+fetch("https://project-assure-backend.herokuapp.com/explore/policies", {
     method:"POST",
     body: temp,
     mode: 'cors',

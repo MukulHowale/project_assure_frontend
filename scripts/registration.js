@@ -56,7 +56,7 @@ submit_btn.addEventListener('click', async(e) =>{
             otp : otp_input
         };
     
-        fetch("http://localhost:8070/user/authenticate", {
+        fetch("https://project-assure-backend.herokuapp.com/user/authenticate", {
             method:"POST",
             body: JSON.stringify(loginData),
             mode: 'cors',
@@ -156,7 +156,7 @@ enter_btn.addEventListener('click', async(e) =>{
         otp : otp_input
     };
 
-    fetch("http://localhost:8070/user/authenticate", {
+    fetch("https://project-assure-backend.herokuapp.com/user/authenticate", {
         method:"POST",
         body: JSON.stringify(loginData),
         mode: 'cors',
@@ -207,7 +207,7 @@ cancel.addEventListener('click', async(e) =>{
         otp : otp_input
     };
 
-    fetch("http://localhost:8070/user/phoneotp", {
+    fetch("https://project-assure-backend.herokuapp.com/user/phoneotp", {
         method:"POST",
         body: JSON.stringify(loginData),
         mode: 'cors',

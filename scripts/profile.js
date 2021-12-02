@@ -4,7 +4,7 @@ let bookings = document.getElementById('bookings');
 async function loadBookings() {
     
     // userId = 2;
-    let a  = await fetch(`http://localhost:8070/bookings/${userId}`);
+    let a  = await fetch(`https://project-assure-backend.herokuapp.com/bookings/${userId}`);
     let b = await a.json();
     localStorage.setItem("PolicyBookings", JSON.stringify(b));
 

@@ -97,7 +97,7 @@ let obj = {
 }
 
 paybutton.onclick = () => {
-    fetch(`http://localhost:8070/bookings/${userId}`, {
+    fetch(`https://project-assure-backend.herokuapp.com/bookings/${userId}`, {
         method:"POST",
         body: obj,
         mode: 'cors',

@@ -24,7 +24,7 @@ claimButt.onclick = () => {
 async function loadUser() {
     
     // userId = 2;
-    let a  = await fetch(`http://localhost:8070/booking/latest/${userId}`);
+    let a  = await fetch(`https://project-assure-backend.herokuapp.com/booking/latest/${userId}`);
     let b = await a.json();
     localStorage.setItem("userName", JSON.stringify(b.userName));
     // b = b[0];

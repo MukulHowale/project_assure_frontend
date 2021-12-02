@@ -41,7 +41,7 @@ async function populate() {
     let select_membershipno=document.getElementById("select_membershipno");
   
     
-    let a = await fetch(`http://localhost:8070/get/member/${userId}`);
+    let a = await fetch(`https://project-assure-backend.herokuapp.com/get/member/${userId}`);
    let member = await a.json();
    console.log(member);
 
@@ -67,7 +67,7 @@ async function post_claim_data() {
     let policy_book=JSON.parse(localStorage.getItem("policy_hospital_claim"));
     console.log(policy_book[0].bookingId);
     console.log(claim.membershipno);
-    let response = await fetch(`http://localhost:8070/claim/${policy_book[0].bookingId}/${userId}/${claim.membershipno}`, {
+    let response = await fetch(`https://project-assure-backend.herokuapp.com/claim/${policy_book[0].bookingId}/${userId}/${claim.membershipno}`, {
         method: "POST",
         body: JSON.stringify({
             type: null,

@@ -32,7 +32,7 @@ log_btn.addEventListener('click', async(e) =>{
         pass : pass_input,
     };
 
-    fetch("http://localhost:8070/user/getUser", {
+    fetch("https://project-assure-backend.herokuapp.com/user/getUser", {
         method:"POST",
         body: JSON.stringify(loginData),
         mode: 'cors',
